@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	form{
+        border: 1px solid black;
+        max-width: 350px;
+        margin-left: 40%;
+        padding: 10px;
+    }
+
+    label{
+        font-weight: bolder;
+        margin-bottom: 10px;
+    }
+    input{
+            padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+        input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+        input[type=submit]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+	<form action="method=">
+   		<label for="fname">First name: </label><br />
+   		<input type="text" id="fname" name="fname"/><br />
+   		<label for="lname">Last name: </label><br />
+   		<input type="text" id="lname" name="lname"/><br />
+   		<label for="roll">Roll no.: </label><br />
+   		<input type="text" name="roll">
+   		<input type="submit" value= "submit" />
+		<div style="margin: 40%;">
+		<h1> style for the form</h1>
+		<form enctype="multipart/form-data">
+   		<input type="file" multiple />
+
+ 	<select>
+    	<option value="male">male</option>
+    	<option value="female">female</option>
+	 </select>
+	</form>
+    <form action="/action_page.php">
+  <div class="mb-3 mt-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+  </div>
+  <div class="form-check mb-3">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember"> Remember me
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
